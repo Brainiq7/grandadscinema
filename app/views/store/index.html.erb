@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <div class="text-center">
-    <h2>Welcome to <span id="app">GrandadsCinema</span></h2>
+    <h2>Welcome to <span id="app">Moviereview</span></h2>
     <p><strong>Buy</strong>, <strong>rate</strong> and <strong>review</strong> your favorite movies. <br> 
     Find new movies to watch based on you and your friends' taste.</p>
     <p><strong>Sign up</strong> using Facebook or Twitter</p>
@@ -18,7 +18,7 @@
       <div class="col-md-3">
         <div class="panel panel-default">
           <div class="panel-heading">
-          <h1>Placeholder for image.</h1>
+         <%= link_to image_tag(movie.poster.url, class: "img-responsive"), movie %>
           </div>
           <div class="panel-body">
             <h4 class="text-center"><%= movie.title %> (<%= movie.release_year %>)</h4>
