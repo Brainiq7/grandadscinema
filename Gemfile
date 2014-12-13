@@ -16,7 +16,7 @@ group :doc do
 end
 
 # Gems for Movie Review
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 gem 'devise'
 gem 'paperclip'
@@ -26,6 +26,7 @@ gem 'figaro'
 group :development do
 	gem 'sqlite3'
 	gem 'spring'
+	gem 'better_errors'
 end
 
 group :production do
