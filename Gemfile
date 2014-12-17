@@ -15,11 +15,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Gems for Movie Review
+# Gems for Grandadscinema
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 gem 'devise'
-gem 'paperclip'
+gem "paperclip", "~> 4.2"
 gem 'paperclip-dropbox'
 gem 'figaro'
 

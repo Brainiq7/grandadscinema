@@ -1,4 +1,5 @@
 <%= form_for(@movie) do |f| %>
+  <%= form.file_field :poster %>
   <% if @movie.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
@@ -33,8 +34,11 @@
   </div>
   <div class="form-group">
     <%= f.label :stock %><br>
-    <%= f.text_field :stock, 
-      class: "form-control" %>
+    <%= f.text_field :stock, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :poster %><br>
+    <%= f.text_field :poster, class: "form-control" %>
   </div>
   <div class="form-group">
     <%= f.submit class: "btn btn-success custom-btn access" %>
